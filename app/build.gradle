@@ -28,6 +28,9 @@ android {
                 arguments '-DANDROID_TOOLCHAIN=clang', '-DANDROID_STL=gnustl_static'
 //                arguments '-DANDROID_TOOLCHAIN=clang' -->gcc
             }
+            ndkBuild {
+                arguments "NDK_DEBUG=1"
+            }
         }
 
     }
